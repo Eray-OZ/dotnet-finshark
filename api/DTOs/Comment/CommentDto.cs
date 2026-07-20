@@ -1,15 +1,11 @@
-﻿using System.Text.Json.Serialization;
-using api.Models.Common;
+﻿namespace api.DTOs.Comment;
 
-namespace api.Models;
-
-public class Comment : Base
+public class CommentDto
 {
+    public Guid Id { get; set; }
     public string Title { get; set; } = string.Empty;
     public string Content { get; set; } = string.Empty;
     public DateTime CreatedOn { get; set; } = DateTime.Now;
     public Guid? StockId { get; set; }
-    // Navigation Property
-    [JsonIgnore]
-    public Stock? Stock { get; set; }
+
 }

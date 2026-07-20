@@ -1,4 +1,5 @@
 using api.Data;
+using api.DTOs.Stock;
 using api.Mappers;
 using api.Models;
 using Microsoft.AspNetCore.Http;
@@ -37,11 +38,13 @@ namespace api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Write(Stock s)
+        public IActionResult Create([FromBody] CreateStockRequestDto stockDto)
         {
-            _context.Stocks.Add(s);
+            var stockModel = stockDto.ToStockFromCreateDTO();
+            _context.Stocks.Add(stockModel);
             _context.SaveChanges();
-            return Ok(s);
+
+            return CreatedAtAction(nameof(GetOne), new {id = stockModel.Id}, stockModel.ToStockDto());
         }
 
 

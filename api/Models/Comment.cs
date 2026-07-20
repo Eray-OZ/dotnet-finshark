@@ -1,6 +1,8 @@
-﻿namespace api.Models;
+﻿using api.Models.Common;
 
-public class Comment
+namespace api.Models;
+
+public class Comment : Base
 {
     public string Title { get; set; } = string.Empty;
     public string Content { get; set; } = string.Empty;

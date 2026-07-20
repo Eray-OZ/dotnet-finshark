@@ -11,7 +11,7 @@
           "Microsoft.AspNetCore.OpenApi": "10.0.7",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "9.0.0",
-          "Scalar.AspNetCore": "2.16.15"
+          "Swashbuckle.AspNetCore.SwaggerUI": "10.2.3"
         },
         "runtime": {
           "api.dll": {}
@@ -415,11 +415,11 @@
           }
         }
       },
-      "Scalar.AspNetCore/2.16.15": {
+      "Swashbuckle.AspNetCore.SwaggerUI/10.2.3": {
         "runtime": {
-          "lib/net10.0/Scalar.AspNetCore.dll": {
-            "assemblyVersion": "2.16.15.0",
-            "fileVersion": "2.16.15.0"
+          "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "assemblyVersion": "10.2.3.0",
+            "fileVersion": "10.2.3.2721"
           }
         }
       },
@@ -625,12 +625,12 @@
       "path": "pomelo.entityframeworkcore.mysql/9.0.0",
       "hashPath": "pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512"
     },
-    "Scalar.AspNetCore/2.16.15": {
+    "Swashbuckle.AspNetCore.SwaggerUI/10.2.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gCwx1CmfNIY4jlz4KAsiZrnUnz9UP+PhnM/rNQV3xcl4bnCaFVNhEBNrTMY9mi1QnsAJ32GeXCYu6DkSR2MHrQ==",
-      "path": "scalar.aspnetcore/2.16.15",
-      "hashPath": "scalar.aspnetcore.2.16.15.nupkg.sha512"
+      "sha512": "sha512-nthWONRs/FJ4yyG206g1cC52WEG8EqrjuMWjGdR+5XG7lbjFto6NqcI9EMICgVFom/UivIjUVwI76ZHbHwTPfQ==",
+      "path": "swashbuckle.aspnetcore.swaggerui/10.2.3",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512"
     },
     "System.CodeDom/6.0.0": {
       "type": "package",

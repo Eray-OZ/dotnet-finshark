@@ -18,13 +18,13 @@ public static class CommentMappers
     }
 
 
-    public static Comment ToModelFromCreateDto(this CreateCommentRequestDto commentDto)
+    public static Comment ToModelFromCreateDto(this CreateCommentRequestDto commentDto, string id)
     {
         return new Comment
         {
             Title = commentDto.Title,
             Content = commentDto.Content,
-            StockId = commentDto.StockId
+            StockId = Guid.Parse(id)
         };
     }
 }

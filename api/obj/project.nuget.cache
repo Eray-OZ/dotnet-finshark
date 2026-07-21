@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "zRq/0L1joww=",
+  "dgSpecHash": "hjPDO5wmjHE=",
   "success": true,
   "projectFilePath": "/Users/erayoz/Codes/FinShark/api/api.csproj",
   "expectedPackageFiles": [
     "/Users/erayoz/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/erayoz/.nuget/packages/microsoft.aspnetcore.jsonpatch/10.0.7/microsoft.aspnetcore.jsonpatch.10.0.7.nupkg.sha512",
+    "/Users/erayoz/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/10.0.7/microsoft.aspnetcore.mvc.newtonsoftjson.10.0.7.nupkg.sha512",
     "/Users/erayoz/.nuget/packages/microsoft.aspnetcore.openapi/10.0.7/microsoft.aspnetcore.openapi.10.0.7.nupkg.sha512",
     "/Users/erayoz/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "/Users/erayoz/.nuget/packages/microsoft.build.framework/17.8.3/microsoft.build.framework.17.8.3.nupkg.sha512",
@@ -25,6 +27,8 @@
     "/Users/erayoz/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512",
     "/Users/erayoz/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
     "/Users/erayoz/.nuget/packages/mysqlconnector/2.4.0/mysqlconnector.2.4.0.nupkg.sha512",
+    "/Users/erayoz/.nuget/packages/newtonsoft.json/13.0.5-beta1/newtonsoft.json.13.0.5-beta1.nupkg.sha512",
+    "/Users/erayoz/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/erayoz/.nuget/packages/pomelo.entityframeworkcore.mysql/9.0.0/pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512",
     "/Users/erayoz/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.2.3/swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
     "/Users/erayoz/.nuget/packages/system.codedom/6.0.0/system.codedom.6.0.0.nupkg.sha512",

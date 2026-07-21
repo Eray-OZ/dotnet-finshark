@@ -1,4 +1,4 @@
-﻿namespace api.DTOs.Comment;
+﻿namespace api.DTOs;
 
 public class CreateCommentRequestDto
 {

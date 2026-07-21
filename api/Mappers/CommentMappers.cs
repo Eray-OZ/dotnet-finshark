@@ -1,4 +1,4 @@
-﻿using api.DTOs.Comment;
+﻿using api.DTOs;
 using api.Models;
 
 namespace api.Mappers;

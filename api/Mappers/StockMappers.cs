@@ -1,4 +1,5 @@
-﻿using api.DTOs.Stock;
+﻿using System.IO.Compression;
+using api.DTOs.Stock;
 using api.Models;
 
 namespace api.Mappers;
@@ -15,7 +16,8 @@ public static class StockMappers
             Purchase = stockModel.Purchase,
             LastDiv = stockModel.LastDiv,
             Industry = stockModel.Industry,
-            MarketCap = stockModel.MarketCap
+            MarketCap = stockModel.MarketCap,
+            Comments = stockModel.Comments.Select(c => c.ToCommentDto()).ToList()
 
         };
     }

@@ -1,4 +1,4 @@
-using api.DTOs.Comment;
+using api.DTOs;
 using api.Interfaces;
 using api.Mappers;
 using api.Models;
@@ -34,6 +34,17 @@ namespace MyApp.Namespace
             var commentModel = commentDto.ToModelFromCreateDto();
             await _commentRepo.CreateAsync(commentModel);
             return Ok(commentModel);
+        }
+
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById([FromRoute] string id)
+        {
+            var comment = await _commentRepo.GetOneAsync(id);
+
+            if (comment==null) { return NotFound(); }
+
+            return Ok(comment.ToCommentDto());
         }
 
     }

@@ -26,5 +26,8 @@ public class CommentRepository : ICommentRepository
         return await _context.Comments.ToListAsync();
     }
 
-    
+    public async Task<Comment?> GetOneAsync(string id)
+    {
+        return await _context.Comments.FindAsync(Guid.Parse(id));
+    }
 }

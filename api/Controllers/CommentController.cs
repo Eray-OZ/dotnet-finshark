@@ -1,4 +1,5 @@
 using api.DTOs;
+using api.DTOS;
 using api.Interfaces;
 using api.Mappers;
 using api.Models;
@@ -39,7 +40,7 @@ namespace MyApp.Namespace
             }
             var commentModel = commentDto.ToModelFromCreateDto(stockId);
             await _commentRepo.CreateAsync(commentModel);
-            return CreatedAtAction(nameof(GetById), new { id=commentModel}, commentModel.ToCommentDto());
+            return CreatedAtAction(nameof(GetById), new { id=commentModel.Id}, commentModel.ToCommentDto());
         }
 
 
@@ -49,6 +50,18 @@ namespace MyApp.Namespace
             var comment = await _commentRepo.GetOneAsync(id);
 
             if (comment==null) { return NotFound(); }
+
+            return Ok(comment.ToCommentDto());
+        }
+
+
+        [HttpPut]
+        [Route("{id}")]
+        public async Task<IActionResult> Update([FromRoute] string id, [FromBody] UpdateCommentRequestDto updateDto)
+        {
+            var comment = await _commentRepo.UpdateAsync(id, updateDto.ToModelFromUpdateDto());
+
+            if (comment == null) { return NotFound("Comment not found"); }
 
             return Ok(comment.ToCommentDto());
         }

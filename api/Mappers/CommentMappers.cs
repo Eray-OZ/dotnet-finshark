@@ -1,4 +1,5 @@
 ﻿using api.DTOs;
+using api.DTOS;
 using api.Models;
 
 namespace api.Mappers;
@@ -27,4 +28,17 @@ public static class CommentMappers
             StockId = Guid.Parse(id)
         };
     }
+
+
+        public static Comment ToModelFromUpdateDto(this UpdateCommentRequestDto commentDto)
+    {
+        return new Comment
+        {
+            Title = commentDto.Title,
+            Content = commentDto.Content,
+        };
+    }
+
+
+
 }

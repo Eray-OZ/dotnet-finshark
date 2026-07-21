@@ -125,3 +125,12 @@
 /Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/Newtonsoft.Json.dll
 /Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/Newtonsoft.Json.Bson.dll
+/Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll
+/Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll
+/Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
+/Users/erayoz/Codes/FinShark/api/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll

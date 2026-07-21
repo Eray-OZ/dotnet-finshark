@@ -3,6 +3,7 @@ using api.Data;
 using api.Interfaces;
 using api.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.JsonPatch.Internal;
 using Microsoft.EntityFrameworkCore;
 
 namespace api.Repository;
@@ -42,6 +43,20 @@ public class CommentRepository : ICommentRepository
         commentModel.Title = comment.Title;
         commentModel.Content = comment.Content;
 
+        await _context.SaveChangesAsync();
+
+        return commentModel;
+    }
+
+
+    public async Task<Comment?> DeleteAsync(string id)
+    {
+        var guid = Guid.Parse(id);
+        var commentModel = await _context.Comments.FirstOrDefaultAsync(x => x.Id == guid);
+
+        if (commentModel == null) { return null; }
+
+        _context.Comments.Remove(commentModel);
         await _context.SaveChangesAsync();
 
         return commentModel;

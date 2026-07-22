@@ -1,8 +1,10 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using api.Models.Common;
 
 namespace api.Models;
 
+[Table("Comments")]
 public class Comment : Base
 {
     public string Title { get; set; } = string.Empty;

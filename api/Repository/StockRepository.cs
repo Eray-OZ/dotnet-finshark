@@ -108,4 +108,9 @@ public class StockRepository : IStockRepository
         var guid = Guid.Parse(id);
         return await _context.Stocks.AnyAsync(s => s.Id == guid);
     }
+
+    public async Task<Stock?> GetBySymbolAsync(string symbol)
+    {
+        return await _context.Stocks.FirstOrDefaultAsync(s => s.Symbol == symbol);
+    }
 }

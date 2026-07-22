@@ -74,6 +74,10 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.5-beta1, )"
@@ -81,6 +85,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[10.2.3, )"
             },
             "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
